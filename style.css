@@ -1,0 +1,641 @@
+@font-face {
+    font-family: ZonaPro;
+    src: url("./fonts/ZonaPro-Regular.otf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: ZonaPro;
+    src: url("./fonts/ZonaPro-Bold.otf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: ZonaPro;
+    src: url("./fonts/ZonaPro-Light.otf");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: OriyaMN;
+    src: url("./fonts/Oriya\ MN.ttc");
+    font-weight: normal;
+}
+
+body {
+    margin: 0; 
+    font-family: ZonaPro, sans-serif;
+}
+/*---------- Section 1 -> header ----------*/
+
+.header-logo {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-container {
+    width: 980px;
+    margin: 0 auto;
+}
+
+/*---------- Section 2 -> navbar ----------*/
+
+div .navbar .navbar-container {
+    border-top: 1px solid #0BABCE;
+    border-bottom: 1px solid #DEDEDE;
+}
+
+div .navbar .navbar-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+div .navbar .navbar-container ul li a {
+    padding: 24px 14px;
+    line-height: 22px;
+    display: block;
+    text-decoration: none;
+    color: #58585A;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/*---------- Section 3 -> highlight ----------*/
+
+.highlight {
+    background: #F7F7F7;
+    position: relative;
+}
+
+.highlight:after {
+    content: "";
+    background: #DFE3E4;
+    display: block;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.highlight .highlight-container {
+    background: url("./images/s3-hero.jpg") center top no-repeat;
+    min-width: 980px;
+    height: 392px;
+    position: relative;
+    z-index: 2;
+}
+
+.slide-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+    width: 980px;
+    margin: 0 auto;
+}
+
+.slide {
+    width: 470px;
+    color: #58585A;
+}
+
+.slide h1 {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.slide h1 span {
+    font-weight: 100;
+}
+
+.slide p {
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 10px 0;
+}
+
+.slide {
+    padding: 20px 0 0 0;
+}
+
+#btn1 {
+    width: 148px;
+}
+
+#btn2 {
+    width: 228px;
+}
+
+/*---------- Section 4 -> cards ----------*/
+
+.cards {
+    width: 100%;
+    height: 282px;
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    display: inline-flex;
+    width: 300px;
+    height: 200px;
+    position: relative;
+}
+
+.btn-vector {
+    position: absolute;
+    padding: 140px 0px 0px 250px;
+    margin: 0px 0px 0px 10px;
+    color: #FFFFFF;
+    opacity: 75%;
+}
+
+#card-1, #card-2 {
+    margin: 40px 40px 42px 0;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+}
+
+.box button {
+    width: 100%;
+    height: 62px;
+    position: absolute;
+    top: 124px;
+    left: 0%;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: left;
+    opacity: 75%;
+}
+
+.btn {
+    background-color: #0898B8;
+    height: 40px;
+    color: #FFFFFF;
+    border-color: #0898B8;
+    font-family: ZonaPro, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+/*---------- Section 5 -> icons ----------*/
+
+.icons {
+    width: 980px;
+    height: 374px;
+    background-color: #FFFFFF;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+}
+
+.icons .icons-container {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.icons .icon-box {
+    width: 312px;
+    height: 182px;
+    padding: 100px 0px 0 0;
+    margin: 0 20px;
+    position: relative;
+}
+
+.frame {
+    position: absolute;
+    right: 0px;
+    top: 30px;
+    width: 110px;
+    height: 110px;
+    background-color: #0898B8;
+    border-radius: 55px;
+}
+
+.icons .icon-box .frame img {
+    position: absolute;
+    width: 66px;
+    height: 73px;
+    left: 20px;
+    right: 20px;
+    top: 20px;
+    bottom: 20px;
+}
+
+.icons .icon-box-title {
+    font-family: ZonaPro, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    color: #58585A
+}
+
+.icons .icon-box-text {
+    font-family: Open Sans;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.line {
+    position: absolute;
+    width: 980px;
+    height: 0px;
+    top: 88px;
+    border: 1px solid rgba(11, 171, 206, 0.6);
+}
+
+/*---------- Section 6 -> testimonials ----------*/
+
+.testimonials {
+    width: 100%;
+    height: 312px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.test-container {
+    display: flex;
+    width: 980px;
+    height: 100%;
+}
+
+.asth {
+    padding: 36px 32px 8px 10px;
+    background-color: #EEEEEE;
+}
+
+.diadik {
+    padding: 36px 32px 58px 18px;
+    background-color: #E6E6E6;
+
+}
+
+#btn6 {
+    width: 146px;
+}
+
+.testimonials:after {
+    position: absolute;
+    content: "";
+    background: #E6E6E6;
+    display: block;
+    height: 100%;
+    width: 50%;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.testimonials::before {
+    position: absolute;
+    content: "";
+    background: #EEEEEE;
+    display: block;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.asth .asth-title {
+    margin: 0;
+    font-family: ZonaPro, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    color: #58585A;
+}
+
+.asth .asth-title span {
+    font-weight: 300;
+}
+
+.asth-cont {
+    display: flex;
+}
+
+.asth .vectors {
+    padding: 0 0 0 76px;
+}
+
+.vectors a {
+    text-decoration: none;
+    color: #717172;
+}
+
+.vleft {
+    margin-right: 20px;
+}
+
+.asth-text {
+    padding-top: 12px;
+    font-family: ZonaPro, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    color: #58585A;
+}
+
+.asth-text span {
+    font-weight: 700;
+}
+
+#quotes {
+    padding: 80px 20px 0px 0px;
+    position: relative;
+    font-family: OriyaMN;
+    font-weight: 400;
+    font-size: 140px;
+    line-height: 22px;
+    color: #0baace20;
+}
+
+.diadik .diadik-title {
+    margin: 0;
+    font-family: ZonaPro, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    color: #58585A;
+}
+
+.diadik .diadik-title span {
+    font-weight: 300;
+}
+
+.diadik-text {
+    margin: 0;
+    padding-top: 12px;
+    font-family: ZonaPro, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    color: #58585A;
+}
+
+/*---------- Section 7 -> info ----------*/
+
+.info {
+    width: 100%;
+    height: 302px;
+    display: flex;
+    position: relative;
+    background-color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+}
+
+.info .patient-info .title {
+    width: 176px;
+    height: 36px;
+    top: 36px;
+    position: absolute;
+    font-family: ZonaPro, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 18px;
+    color: #717172;
+}
+
+.info .patient-info .title span {
+    font-weight: 300;
+    color: #717172;
+}
+
+.info .patient-info .text {
+    width: 300px;
+    height: 50px;
+    color: #717172;
+    top: 84px;
+    font-family: ZonaPro, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    margin-top: 12px;
+}
+
+.info .patient-info .vector {
+    width: 20px;
+    height: 14px;
+    top: 140px;
+}
+
+.info .fulladia .fulladio {
+    display: inline-flex;
+    position: relative;
+    width: 150px;
+    height: 226px;
+    margin: auto 0;
+    justify-content: center;
+}
+
+#f1, #f2, #f3 {
+    margin-right: 20px;
+}
+
+.info .fulladia img {
+    width: 100%;
+    height: auto;
+}
+
+.info .fulladia .fulladio button {
+    display: flex;
+    width: 95%;
+    position: absolute;
+    bottom: 14px;
+    text-align: start;
+    background-color: #0898B8;
+    opacity: 75%;
+    color: #FFFFFF;
+    border-color: #0898B8;
+    font-family: ZonaPro, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+#btn7, #btn8 {
+    height: 30px;
+}
+
+#btn9 {
+    height: 40px;
+}
+
+#btn10 {
+    height: auto;
+}
+
+.info .fulladia .fulladio button span {
+    margin: auto 0;
+}
+
+/*---------- Section 8 -> app-banner ----------*/
+
+.app-banner {
+    background: url("./images/s8-3-background.png") center top no-repeat;
+    z-index: -1;
+}
+
+.app-banner {
+    background-color: #0898B8;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    z-index: -2;
+}
+
+.app-banner .banner-title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+}
+
+.app-banner .banner-title p {
+    color: #FFFFFF;
+    font-family: ZonaPro, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 28px;
+}
+
+.app-banner .banner-title p span {
+    font-weight: 300;
+}
+
+#appstore, #googleplay {
+    width: 110px;
+    height: 32px;
+    margin: 24px 4px 0 10px;
+}
+
+/*---------- Section 9 -> navigation9 ----------*/
+
+.navigation9 .nav9-container {
+    width: 100%;
+    height: 302px;
+    display: flex;
+    position: relative;
+    background-color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation9 .nav9-container ul {
+    width: 300px;
+    height: 100%;
+    padding: 36px 40px 0 0;
+}
+
+.navigation9 .nav9-container ul {
+    font-family: ZonaPro, sans-serif;
+    line-height: 22px;
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 400;
+    font-size: 14px;
+    list-style-type: none;
+}
+
+.navigation9 .nav9-container ul .ul-title {
+    text-decoration: none;
+    color: #0898B8;
+    font-family: ZonaPro, sans-serif;
+    line-height: 25px;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 0 0 5px 0;
+}
+
+.navigation9 .nav9-container ul .ul-subtitle {
+    border-bottom: 2px solid #0898B8;
+}
+
+.navigation9 .nav9-container ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+/*---------- Section 10 -> footer ----------*/
+
+.footer .footer-container {
+    width: 100%;
+    height: 176px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #58585A;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.footer .footer-container .footer-row1 {
+    display: flex;
+    width: 980px;
+    position: relative;
+}
+
+.footer .footer-container .footer-row1 ul {
+    display: flex;
+    height: 16px;
+    list-style-type: none;
+    justify-content: end;
+    position: absolute;
+    right: 10px;
+}
+
+.footer .footer-container .footer-row1 img {
+    width: 36px;
+    height: 50px;
+    margin: 0 10px 0 0;
+}
+
+.footer .footer-container .footer-row1 #p91 {
+    width: 410px;
+    height: 34px;
+    font-family: Open Sans, sans-serif;
+    line-height: 17px;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.footer .footer-container .footer-row1 ul li{
+    font-family: ZonaPro, sans-serif;
+    line-height: 16px;
+    font-weight: 300;
+    font-size: 12px;
+    padding-left: 20px;
+}
+
+.footer .footer-container .footer-row1 ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.footer .footer-container .footer-row2 #p92 {
+    width: 980px;
+    font-family: Open Sans, sans-serif;
+    line-height: 16px;
+    font-weight: 300;
+    font-size: 12px;
+}
